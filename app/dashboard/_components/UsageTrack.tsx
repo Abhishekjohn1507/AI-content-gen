@@ -55,12 +55,12 @@ export interface HISTORY {
             <h2 className='font-medium'>Credits</h2>
             <div className='h-2 bg-[#9981f9] w-full rounded-full mt-3'>
                 <div className='h-2 bg-white rounded-full' style={{
-                    width:(totalUsage/1000000)*100+"%"
+                    width:(totalUsage/100000)*100+"%"
                 }}>
 
                 </div>
             </div>
-            <h2 className='text-[12px] mt-2'>{totalUsage}/1000000 Credits Usages</h2>
+            <h2 className='text-[12px] mt-2'>{totalUsage}/100000 Credits Usages</h2>
             
         </div>
         <Button variant={'outline'} className='w-full my-3 text-[#8046FD]' onClick={()=>router.push("/dashboard/billing")}> Upgrade</Button>
