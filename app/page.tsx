@@ -10,10 +10,11 @@ export default function Home() {
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex justify-between p-5 flex-col md:flex-row items-center">
           <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <Image src={"/logo.svg"} alt="logo" width={80} height={100} />
+           <a href="/"><Image src={"/logo.png"} alt="logo" width={80} height={100} /></a>
+            
 
             <span className="ml-3 text-base font-bold text-[#8046fd]  font-mono">
-              samAI CONTENT GENERATOR
+              AI CONTENT GENERATOR
             </span>
           </div>
 
@@ -41,7 +42,7 @@ export default function Home() {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col  text-center w-full mb-20">
             <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-              AI Content Generator Powered by SAMIR
+              AI Content Generator Powered by SKILLZEE
             </h2>
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               Generate content,keywords and descriptions with Contentful AI
