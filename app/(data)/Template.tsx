@@ -21,6 +21,47 @@ export default [
         ]
     },
     {
+        "name": "Essay Writer",
+        "desc": "An AI tool that generates Essay based on your blog information.",
+        "category": "Essay Writer",
+        "icon": "https://cdn-icons-png.flaticon.com/128/3131/3131607.png",
+        "aiPromt": "Write essay on the the given topic in 400words and provide the result in Rich Text Editor format.",
+        "slug": "generate-essay-writer",
+        "form": [
+            {
+                "label": "Enter Your Essay Niche",
+                "field": "input",
+                "name": "niche",
+                "required": true
+            },
+            {
+                "label": "Enter Essay Outline",
+                "field": "textarea",
+                "name": "outline"
+            }
+        ]
+    },{
+        "name": "Notice Writer",
+        "desc": "An AI tool that generates Notice based on your Notice information.",
+        "category": "Notice Writer",
+        "icon": "https://cdn-icons-png.flaticon.com/128/3131/3131607.png",
+        "aiPromt": "Write notice on the the given topic in 100words and provide the result in Rich Text Editor format.",
+        "slug": "generate-Notice-writer",
+        "form": [
+            {
+                "label": "Enter Your Notice Niche",
+                "field": "input",
+                "name": "niche",
+                "required": true
+            },
+            {
+                "label": "Enter Notice Outline",
+                "field": "textarea",
+                "name": "outline"
+            }
+        ]
+    },
+    {
         "name": "Social Media Post",
         "desc": "An AI tool that generates engaging social media posts.",
         "category": "Social Media",

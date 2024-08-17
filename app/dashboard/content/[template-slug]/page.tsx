@@ -31,7 +31,7 @@ function CreateNewContent(props: PROPS) {
   const {updateCreditUsage, setUpdateCreditUsage} = useContext(UpdateCreditUsageContext)
 
   const GenerateAIContent = async (formData: any) => {
-    if (totalUsage >= 1000000) {
+    if (totalUsage >= 100000) {
       return;
     }
     setLoading(true);
