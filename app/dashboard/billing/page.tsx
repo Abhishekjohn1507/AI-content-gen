@@ -1,6 +1,26 @@
-import React from 'react'
+"use client"
 
-function page() {
+import React from 'react'
+import  axio from "axios";
+import axios from 'axios';
+
+function billing() {
+
+  const CreateSubscription=()=>{
+    axios.post('/api/create-subscription',{})
+    .then(resp=>{
+      console.log(resp.data);
+    })
+
+  }
+
+  axios.get('/api/create-subscription')
+  .then(response => console.log(response))
+  .catch(error => {
+    console.error('Error message:', error.message);
+    console.error('Error response data:', error.response?.data);
+  });
+
   return (
     <div>
       <section className="text-gray-600 body-font overflow-hidden">
@@ -36,7 +56,9 @@ function page() {
               </svg>
             </span>Advanced Analytics
           </p>
-          <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Subscribe
+          <button 
+          onClick={()=>CreateSubscription()}
+           className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Subscribe
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -80,7 +102,8 @@ function page() {
               </svg>
             </span>Advanced Analytics
           </p>
-          <button className="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Subscribe
+          <button 
+          className="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Subscribe
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -195,4 +218,4 @@ function page() {
   )
 }
 
-export default page
+export default billing
