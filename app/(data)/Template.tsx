@@ -40,7 +40,51 @@ export default [
                 "name": "outline"
             }
         ]
-    },{
+    },
+    {
+        "name": "Current Affair",
+        "desc": "An AI tool that generates Current Affair based on your  information.",
+        "category": "Current Affair",
+        
+        "icon": "/book.png",
+        "aiPromt": "Write current affair on the the given topic in 1000words and provide the result in bullet points in Rich Text Editor format.",
+        "slug": "generate-current-affair",
+        "form": [
+            {
+                "label": "Enter Your current affair Niche",
+                "field": "input",
+                "name": "niche",
+                "required": true
+            },
+            {
+                "label": "Enter Some Outline",
+                "field": "textarea",
+                "name": "outline"
+            }
+        ]
+    },    {
+        "name": "Interview Questions",
+        "desc": "An AI tool that generates Interview questions based on your information.",
+        "category": "Interview Questions",
+        
+        "icon": "/interview.png",
+        "aiPromt": "Write Interview questions on the the given topic in 1000words and provide the result in bullet points and give exact answers in one lines in Rich Text Editor format.",
+        "slug": "generate-Interview-Questions",
+        "form": [
+            {
+                "label": "Enter Your Interview Questions Niche",
+                "field": "input",
+                "name": "niche",
+                "required": true
+            },
+            {
+                "label": "Enter Some Outline",
+                "field": "textarea",
+                "name": "outline"
+            }
+        ]
+    },
+    {
         "name": "Notice Writer",
         "desc": "An AI tool that generates Notice based on your Notice information.",
         "category": "Notice Writer",

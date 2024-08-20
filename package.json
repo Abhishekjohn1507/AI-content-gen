@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^5.2.8",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@google/generative-ai": "^0.16.0",
     "@neondatabase/serverless": "^0.9.4",
     "@radix-ui/react-alert-dialog": "^1.1.1",
