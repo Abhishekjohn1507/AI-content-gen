@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { FaClock, FaThumbsUp, FaMoneyBill, FaPuzzlePiece } from 'react-icons/fa';
+
 
 export default function Home() {
   const router = useRouter();
@@ -59,9 +61,12 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <div className="px-8 py-6 border-l-2 border-gray-200 border-opacity-60 shadow-lg rounded-lg">
+            <FaClock size={32} className="text-blue-500" />
+            <br />
               <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                 Time Efficiency
-              </h2>
+              </h2>             
+      
               <p className="leading-relaxed text-base mb-4">
                 Save hours on content creation. Our AI generates high-quality,
                 relevant content in seconds, allowing you to focus on other
@@ -70,6 +75,8 @@ export default function Home() {
             </div>
             <div className="px-8 py-6 border-l-2 border-gray-200 border-opacity-60 shadow-lg rounded-lg">
               <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+              <FaThumbsUp size={24} className="text-green-500" />
+              <br />
                 Consistency and Quality
               </h2>
               <p className="leading-relaxed text-base mb-4">
@@ -80,6 +87,7 @@ export default function Home() {
               </p>
             </div>
             <div className="px-8 py-6 border-l-2 border-gray-200 border-opacity-60 shadow-lg rounded-lg">
+            <FaMoneyBill size={40} className="text-red-500" /><br />
               <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                 Cost-Effective
               </h2>
@@ -90,6 +98,8 @@ export default function Home() {
               </p>
             </div>
             <div className="px-8 py-6 border-l-2 border-gray-200 border-opacity-60 shadow-lg rounded-lg">
+            <FaPuzzlePiece size={28} className="text-purple-500" /><br />
+            
               <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                 Versatility
               </h2>

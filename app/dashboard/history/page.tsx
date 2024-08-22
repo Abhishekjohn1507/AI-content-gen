@@ -56,13 +56,13 @@ async function History() {
                 <p className='col-span-1 text-center text-xl'>
                   {GetTemplateName(item?.templateSlug)?.name}
                 </p>
-                <p className="col-span-2 text-center text-xl">
-                  {item.aiResponse ? truncateText(item.aiResponse, 50) : 'No response available'}
+                <p className="col-span-2 text-center ">
+                  {item.aiResponse ? truncateText(item.aiResponse, 100) : 'No response available'}
                 </p>
-                <p className="col-span-1 text-center text-xl">
+                <p className="col-span-1 text-center ">
                    {item?.createdAt}
                 </p>
-                <h2 className="col-span-1 text-center text-xl">{item.aiResponse?.split(" ").length || 0}</h2>
+                <h2 className="col-span-1 text-center ">{item.aiResponse?.split(" ").length || 0}</h2>
               
             </div>
           ))}
